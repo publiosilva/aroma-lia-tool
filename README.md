@@ -28,8 +28,24 @@ Once the container is running, open your browser and navigate to:
 http://localhost:8000
 ```
 
-## 📖 License
-This project is licensed under [MIT License](LICENSE).
+## AromaLIA API
+
+When the Docker image is running, an API is available on port 3000. You can use the API by making the following request:
+
+```bash
+curl --location 'http://localhost:3000/test-smells/detect' \
+--header 'Content-Type: application/json' \
+--data '{
+    "language": "csharp | java | python",
+    "framework": "xunit | junit | pytest",
+    "repositoryURL": "https://github.com/public/repository/url"
+}'
+```
+
+### Parameters:
+- **`language`**: The programming language of the repository (`csharp`, `java`, or `python`).
+- **`framework`**: The testing framework used (`xunit`, `junit`, or `pytest`).
+- **`repositoryURL`**: The URL of the public repository to analyze.
 
 ## 🤝 Contributing
 We welcome contributions! Feel free to submit issues or pull requests.
