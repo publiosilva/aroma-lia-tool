@@ -1,0 +1,32 @@
+[
+  {
+    "identifier": "ClassOrInterface",
+    "pattern": ".*",
+    "auxiliary_pattern": "#{package_name}",
+    "subpatterns": [
+      {
+        "identifier": "Annotation",
+        "pattern": "@Document",
+        "subpatterns": [
+          {
+            "identifier": "AnnotationValuePair",
+            "pattern": "collection",
+            "auxiliary_pattern": "\"#{entity_name}\"",
+            "subpatterns": [],
+            "essential": true
+          }
+        ],
+        "essential": true
+      },
+      {
+        "identifier": "Field",
+        "pattern": "#{field_name}",
+        "auxiliary_pattern": "#{field_type}",
+        "subpatterns": [],
+        "callback": "let entity_name = `${ctx.get_variable(\"package_name\")?}: ${ctx.get_variable(\"entity_name\")?}`;let field_name = ctx.get_variable(\"field_name\")?;let field_type = ctx.get_variable(\"field_type\")?;let entities = ctx.get_or_save(\"entities\", []);let result = ctx.get_or_save(entity_name, entities.len());if (result >= entities.len()) { ctx.make_transient(entity_name); entities.push(#{ name: entity_name, fields: [], type: \"MongoDB\" });}entities[result].fields.push(#{ name: field_name, type: field_type, is_collection: false });",
+        "essential": true
+      }
+    ],
+    "essential": true
+  }
+]

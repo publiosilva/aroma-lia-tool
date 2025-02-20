@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# Directory for compiled output
+/dist
+
+# Environment variables file
+.env

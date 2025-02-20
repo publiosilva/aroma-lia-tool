@@ -1,0 +1,375 @@
+
+running 19 tests
+test lang::cpp::stmt::tests::empty_for_loop_test ... ignored
+test lang::cpp::stmt::tests::init_declaration_test ... ignored
+test lang::cpp::stmt::tests::return_stmt_test ... ignored
+test lang::cpp::tests::destructor_method ... ignored
+test lang::cpp::tests::func_ident_destructor ... ignored
+test lang::cpp::tests::func_ident_regular ... ignored
+test lang::cpp::tests::func_param_single ... ignored
+test lang::cpp::tests::type_ident_generics ... ignored
+test lang::cpp::tests::type_ident_primitive ... ignored
+test lang::cpp::tests::type_ident_scoped ... ignored
+test parse::tests::parse_cpp_ast ... ignored
+test parse::tests::parse_go_ast ... ignored
+test parse::tests::parse_python_ast ... ignored
+test parse::tests::parse_rust_ast ... ignored
+test prophet::tests::serialization_transformation ... ignored
+test ressa::callback::tests::add_get_variables_from_script ... ignored
+test ressa::callback::tests::add_get_variables_outside_script ... ignored
+test ressa::explorer::tests::does_this_call ... ignored
+test ressa::node_pattern::tests::test_bson ... ignored
+
+test result: ok. 0 passed; 0 failed; 19 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking laast_deathstarbench
+Benchmarking laast_deathstarbench: Warming up for 3.0000 s
+Benchmarking laast_deathstarbench: Collecting 100 samples in estimated 7.8248 s (200 iterations)
+Benchmarking laast_deathstarbench: Analyzing
+laast_deathstarbench    time:   [31.484 ms 32.051 ms 32.698 ms]
+                        change: [-44.377% -42.225% -40.031%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) high mild
+  6 (6.00%) high severe
+
+Benchmarking treesitter_ast_deathstarbench
+Benchmarking treesitter_ast_deathstarbench: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 18.2s, or reduce sample count to 20.
+Benchmarking treesitter_ast_deathstarbench: Collecting 100 samples in estimated 18.168 s (100 iterations)
+Benchmarking treesitter_ast_deathstarbench: Analyzing
+treesitter_ast_deathstarbench
+                        time:   [157.56 ms 159.91 ms 162.58 ms]
+                        change: [-42.231% -40.232% -38.210%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 10 outliers among 100 measurements (10.00%)
+  4 (4.00%) high mild
+  6 (6.00%) high severe
+
+Benchmarking laast_total_deathstarbench
+Benchmarking laast_total_deathstarbench: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 20.3s, or reduce sample count to 20.
+Benchmarking laast_total_deathstarbench: Collecting 100 samples in estimated 20.340 s (100 iterations)
+Benchmarking laast_total_deathstarbench: Analyzing
+laast_total_deathstarbench
+                        time:   [182.03 ms 185.10 ms 188.74 ms]
+                        change: [-42.072% -39.399% -36.537%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) high mild
+  6 (6.00%) high severe
+
+Benchmarking laast_trainticket
+Benchmarking laast_trainticket: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 10.1s, or reduce sample count to 40.
+Benchmarking laast_trainticket: Collecting 100 samples in estimated 10.059 s (100 iterations)
+Benchmarking laast_trainticket: Analyzing
+laast_trainticket       time:   [68.974 ms 72.107 ms 75.522 ms]
+                        change: [-48.093% -44.090% -39.569%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 17 outliers among 100 measurements (17.00%)
+  2 (2.00%) high mild
+  15 (15.00%) high severe
+
+Benchmarking treesitter_ast_trainticket
+Benchmarking treesitter_ast_trainticket: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 42.9s, or reduce sample count to 10.
+Benchmarking treesitter_ast_trainticket: Collecting 100 samples in estimated 42.894 s (100 iterations)
+Benchmarking treesitter_ast_trainticket: Analyzing
+treesitter_ast_trainticket
+                        time:   [464.50 ms 489.85 ms 517.07 ms]
+                        change: [-19.653% -13.751% -7.1077%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 6 outliers among 100 measurements (6.00%)
+  5 (5.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking laast_total_trainticket
+Benchmarking laast_total_trainticket: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 47.3s, or reduce sample count to 10.
+Benchmarking laast_total_trainticket: Collecting 100 samples in estimated 47.276 s (100 iterations)
+Benchmarking laast_total_trainticket: Analyzing
+laast_total_trainticket time:   [486.69 ms 507.23 ms 530.70 ms]
+                        change: [-0.9816% +4.4376% +10.155%] (p = 0.12 > 0.05)
+                        No change in performance detected.
+Found 10 outliers among 100 measurements (10.00%)
+  1 (1.00%) high mild
+  9 (9.00%) high severe
+
+Benchmarking ressa_endpoint_deathstarbench_simple
+Benchmarking ressa_endpoint_deathstarbench_simple: Warming up for 3.0000 s
+Benchmarking ressa_endpoint_deathstarbench_simple: Collecting 100 samples in estimated 5.7099 s (700 iterations)
+Benchmarking ressa_endpoint_deathstarbench_simple: Analyzing
+ressa_endpoint_deathstarbench_simple
+                        time:   [7.0586 ms 7.1239 ms 7.1940 ms]
+                        change: [-14.368% -9.9847% -5.9418%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 11 outliers among 100 measurements (11.00%)
+  10 (10.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking ressa_endpoint_deathstarbench_call_graph
+Benchmarking ressa_endpoint_deathstarbench_call_graph: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 7.9s, or reduce sample count to 60.
+Benchmarking ressa_endpoint_deathstarbench_call_graph: Collecting 100 samples in estimated 7.8723 s (100 iterations)
+Benchmarking ressa_endpoint_deathstarbench_call_graph: Analyzing
+ressa_endpoint_deathstarbench_call_graph
+                        time:   [75.060 ms 75.389 ms 75.763 ms]
+                        change: [-46.560% -43.345% -39.780%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 11 outliers among 100 measurements (11.00%)
+  6 (6.00%) high mild
+  5 (5.00%) high severe
+
+Benchmarking ressa_entity_deathstarbench
+Benchmarking ressa_entity_deathstarbench: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 18.3s, or reduce sample count to 20.
+Benchmarking ressa_entity_deathstarbench: Collecting 100 samples in estimated 18.293 s (100 iterations)
+Benchmarking ressa_entity_deathstarbench: Analyzing
+ressa_entity_deathstarbench
+                        time:   [182.64 ms 186.26 ms 190.24 ms]
+                        change: [-6.3169% -3.4678% -0.4303%] (p = 0.02 < 0.05)
+                        Change within noise threshold.
+Found 6 outliers among 100 measurements (6.00%)
+  5 (5.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking ressa_endpoint_trainticket
+Benchmarking ressa_endpoint_trainticket: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 660.1s, or reduce sample count to 10.
+Benchmarking ressa_endpoint_trainticket: Collecting 100 samples in estimated 660.10 s (100 iterations)
+Benchmarking ressa_endpoint_trainticket: Analyzing
+ressa_endpoint_trainticket
+                        time:   [8.4293 s 8.7235 s 9.0180 s]
+                        change: [+5.8223% +10.876% +16.453%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+
+Benchmarking ressa_entity_trainticket
+Benchmarking ressa_entity_trainticket: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 8.8s, or reduce sample count to 50.
+Benchmarking ressa_entity_trainticket: Collecting 100 samples in estimated 8.7772 s (100 iterations)
+Benchmarking ressa_entity_trainticket: Analyzing
+ressa_entity_trainticket
+                        time:   [91.630 ms 93.533 ms 95.520 ms]
+                        change: [+4.0305% +9.1596% +14.232%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 5 outliers among 100 measurements (5.00%)
+  5 (5.00%) high mild
+
+laast_deathstarbench
+  Instructions:          1396539330 (No change)
+  L1 Accesses:           2045592509 (+0.000000%)
+  L2 Accesses:              9744525 (-0.000010%)
+  RAM Accesses:             1435489 (No change)
+  Estimated Cycles:      2144557249 (-0.000000%)
+
+laast_trainticket
+  Instructions:          3493490132 (+0.000159%)
+  L1 Accesses:           5122623920 (+0.000530%)
+  L2 Accesses:             30170945 (+0.186167%)
+  RAM Accesses:             2732303 (-3.013490%)
+  Estimated Cycles:      5369109250 (-0.049590%)
+
+ressa_endpoint_deathstarbench_simple
+  Instructions:          1450573841 (+0.001691%)
+  L1 Accesses:           2122227512 (+0.001243%)
+  L2 Accesses:             10576051 (+0.010998%)
+  RAM Accesses:             1475866 (+0.016264%)
+  Estimated Cycles:      2226763077 (+0.001823%)
+
+ressa_endpoint_deathstarbench_call_graph
+  Instructions:          2257098393 (-0.010628%)
+  L1 Accesses:           3249348651 (-0.005978%)
+  L2 Accesses:             19760875 (-0.393328%)
+  RAM Accesses:             1480011 (+0.005000%)
+  Estimated Cycles:      3399953411 (-0.017110%)
+
+ressa_entity_deathstarbench
+  Instructions:          3278644391 (-0.069298%)
+  L1 Accesses:           4693152645 (-0.068758%)
+  L2 Accesses:             16865333 (+0.600555%)
+  RAM Accesses:             1498112 (+0.003071%)
+  Estimated Cycles:      4829913230 (-0.056369%)
+
+ressa_benchmark_endpoint_tt
+  Instructions:         64627119686 (-0.984003%)
+  L1 Accesses:          90915250985 (-0.988441%)
+  L2 Accesses:            821051146 (+0.931486%)
+  RAM Accesses:             3457701 (-0.766586%)
+  Estimated Cycles:     95141526250 (-0.906826%)
+
+ressa_benchmark_entity_tt
+  Instructions:          4112839132 (+0.191911%)
+  L1 Accesses:           5991234910 (+0.186222%)
+  L2 Accesses:             36759717 (+0.025407%)
+  RAM Accesses:             3529026 (+3.765431%)
+  Estimated Cycles:      6298549405 (+0.249329%)
+
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking laast_deathstarbench_mem
+Benchmarking laast_deathstarbench_mem: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 5.6s, or reduce sample count to 80.
+Benchmarking laast_deathstarbench_mem: Collecting 100 samples in estimated 5.6256 s (100 iterations)
+Benchmarking laast_deathstarbench_mem: Analyzing
+laast_deathstarbench_mem
+                        time:   [46.407 ms 47.732 ms 49.128 ms]
+                        change: [+38.121% +44.260% +50.711%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+
+3106744.9325153376 +/- 50704.132903009355 (3111856)
+Benchmarking treesitter_ast_deathstarbench_mem
+Benchmarking treesitter_ast_deathstarbench_mem: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 23.5s, or reduce sample count to 20.
+Benchmarking treesitter_ast_deathstarbench_mem: Collecting 100 samples in estimated 23.525 s (100 iterations)
+Benchmarking treesitter_ast_deathstarbench_mem: Analyzing
+treesitter_ast_deathstarbench_mem
+                        time:   [219.09 ms 222.83 ms 226.87 ms]
+                        change: [+15.297% +20.978% +26.770%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+
+7791629.426086957 +/- 28133.28889756849 (7789928)
+Benchmarking laast_total_deathstarbench_mem
+Benchmarking laast_total_deathstarbench_mem: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 26.8s, or reduce sample count to 10.
+Benchmarking laast_total_deathstarbench_mem: Collecting 100 samples in estimated 26.802 s (100 iterations)
+Benchmarking laast_total_deathstarbench_mem: Analyzing
+laast_total_deathstarbench_mem
+                        time:   [241.09 ms 244.83 ms 248.75 ms]
+                        change: [+17.921% +23.368% +28.495%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+
+3095589.6347826086 +/- 60786.327446737065 (3086464)
+Benchmarking laast_trainticket_mem
+Benchmarking laast_trainticket_mem: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 11.1s, or reduce sample count to 40.
+Benchmarking laast_trainticket_mem: Collecting 100 samples in estimated 11.117 s (100 iterations)
+Benchmarking laast_trainticket_mem: Analyzing
+laast_trainticket_mem   time:   [94.999 ms 97.468 ms 100.25 ms]
+                        change: [-15.484% -9.8938% -3.6832%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 11 outliers among 100 measurements (11.00%)
+  5 (5.00%) high mild
+  6 (6.00%) high severe
+
+17212990.229007635 +/- 77845.28363625308 (17216432)
+Benchmarking treesitter_ast_trainticket_mem
+Benchmarking treesitter_ast_trainticket_mem: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 65.0s, or reduce sample count to 10.
+Benchmarking treesitter_ast_trainticket_mem: Collecting 100 samples in estimated 64.977 s (100 iterations)
+Benchmarking treesitter_ast_trainticket_mem: Analyzing
+treesitter_ast_trainticket_mem
+                        time:   [593.94 ms 602.70 ms 611.91 ms]
+                        change: [+26.133% +31.355% +36.480%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+
+23591659.738317758 +/- 16087.183988678484 (23593120)
+Benchmarking laast_total_trainticket_mem
+Benchmarking laast_total_trainticket_mem: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 75.3s, or reduce sample count to 10.
+Benchmarking laast_total_trainticket_mem: Collecting 100 samples in estimated 75.327 s (100 iterations)
+Benchmarking laast_total_trainticket_mem: Analyzing
+laast_total_trainticket_mem
+                        time:   [669.23 ms 679.32 ms 689.76 ms]
+                        change: [+10.316% +16.474% +22.935%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high mild
+
+17218990.953271028 +/- 74669.34261220801 (17216024)
+Benchmarking ressa_endpoint_deathstarbench_simple_mem
+Benchmarking ressa_endpoint_deathstarbench_simple_mem: Warming up for 3.0000 s
+Benchmarking ressa_endpoint_deathstarbench_simple_mem: Collecting 100 samples in estimated 5.8996 s (500 iterations)
+Benchmarking ressa_endpoint_deathstarbench_simple_mem: Analyzing
+ressa_endpoint_deathstarbench_simple_mem
+                        time:   [10.406 ms 10.684 ms 10.997 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  3 (3.00%) high mild
+  6 (6.00%) high severe
+
+63879.470198675495 +/- 105512.68381684506 (24368)
+Benchmarking ressa_endpoint_deathstarbench_call_graph_mem
+Benchmarking ressa_endpoint_deathstarbench_call_graph_mem: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 12.5s, or reduce sample count to 30.
+Benchmarking ressa_endpoint_deathstarbench_call_graph_mem: Collecting 100 samples in estimated 12.548 s (100 iterations)
+Benchmarking ressa_endpoint_deathstarbench_call_graph_mem: Analyzing
+ressa_endpoint_deathstarbench_call_graph_mem
+                        time:   [114.58 ms 116.56 ms 118.69 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  4 (4.00%) high mild
+  2 (2.00%) high severe
+
+387651.2366412214 +/- 174847.8210742936 (454304)
+Benchmarking ressa_entity_deathstarbench_mem
+Benchmarking ressa_entity_deathstarbench_mem: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 25.0s, or reduce sample count to 20.
+Benchmarking ressa_entity_deathstarbench_mem: Collecting 100 samples in estimated 24.985 s (100 iterations)
+Benchmarking ressa_entity_deathstarbench_mem: Analyzing
+ressa_entity_deathstarbench_mem
+                        time:   [236.59 ms 240.23 ms 244.29 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  5 (5.00%) high mild
+  2 (2.00%) high severe
+
+395101.5652173913 +/- 122984.29269862568 (426296)
+Benchmarking ressa_endpoint_trainticket_mem
+Benchmarking ressa_endpoint_trainticket_mem: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 935.9s, or reduce sample count to 10.
+Benchmarking ressa_endpoint_trainticket_mem: Collecting 100 samples in estimated 935.94 s (100 iterations)
+Benchmarking ressa_endpoint_trainticket_mem: Analyzing
+ressa_endpoint_trainticket_mem
+                        time:   [10.954 s 11.275 s 11.617 s]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+
+296116.9108910891 +/- 30664.059086200257 (286432)
+Benchmarking ressa_entity_trainticket_mem
+Benchmarking ressa_entity_trainticket_mem: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 10.7s, or reduce sample count to 40.
+Benchmarking ressa_entity_trainticket_mem: Collecting 100 samples in estimated 10.733 s (100 iterations)
+Benchmarking ressa_entity_trainticket_mem: Analyzing
+ressa_entity_trainticket_mem
+                        time:   [106.29 ms 108.35 ms 110.54 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+
+251286.04580152672 +/- 115456.29081530658 (295040)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

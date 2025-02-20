@@ -1,0 +1,200 @@
+{
+  "assurance.entity: assurance": {
+    "id": "UUID",
+    "orderId": "UUID",
+    "type": "AssuranceType"
+  },
+  "com.trainticket.entity: addMoney": {
+    "money": "String",
+    "userId": "String"
+  },
+  "com.trainticket.entity: payment": {
+    "id": "String",
+    "orderId": "String",
+    "price": "String",
+    "userId": "String"
+  },
+  "config.entity: config": {
+    "description": "String",
+    "name": "String",
+    "value": "String"
+  },
+  "consign.entity: consign_record": {
+    "accountId": "UUID",
+    "consignee": "String",
+    "from": "String",
+    "handleDate": "String",
+    "id": "UUID",
+    "orderId": "UUID",
+    "phone": "String",
+    "price": "double",
+    "targetDate": "String",
+    "to": "String",
+    "weight": "double"
+  },
+  "consignprice.entity: consign_price": {
+    "beyondPrice": "double",
+    "id": "UUID",
+    "index": "int",
+    "initialPrice": "double",
+    "initialWeight": "double",
+    "withinPrice": "double"
+  },
+  "contacts.entity: contacts": {
+    "accountId": "UUID",
+    "documentNumber": "String",
+    "documentType": "int",
+    "id": "UUID",
+    "name": "String",
+    "phoneNumber": "String"
+  },
+  "fdse.microservice.entity: station": {
+    "id": "String",
+    "name": "String",
+    "stayTime": "int"
+  },
+  "food.entity: stores": {
+    "businessTime": "String",
+    "deliveryFee": "double",
+    "foodList": "List<Food>",
+    "id": "UUID",
+    "stationId": "String",
+    "storeName": "String",
+    "telephone": "String"
+  },
+  "food.entity: trainfoods": {
+    "foodList": "List<Food>",
+    "id": "UUID",
+    "tripId": "String"
+  },
+  "foodsearch.entity: foodorder": {
+    "foodName": "String",
+    "foodType": "int",
+    "id": "UUID",
+    "orderId": "UUID",
+    "price": "double",
+    "stationName": "String",
+    "storeName": "String"
+  },
+  "foodsearch.entity: routes": {
+    "distances": "List<Integer>",
+    "id": "String",
+    "startStationId": "String",
+    "stations": "List<String>",
+    "terminalStationId": "String"
+  },
+  "inside_payment.entity: addMoney": {
+    "id": "String",
+    "money": "String",
+    "type": "MoneyType",
+    "userId": "String"
+  },
+  "inside_payment.entity: payment": {
+    "id": "String",
+    "orderId": "String",
+    "price": "String",
+    "type": "PaymentType",
+    "userId": "String"
+  },
+  "order.entity: orders": {
+    "accountId": "UUID",
+    "boughtDate": "Date",
+    "coachNumber": "int",
+    "contactsDocumentNumber": "String",
+    "contactsName": "String",
+    "documentType": "int",
+    "from": "String",
+    "id": "UUID",
+    "price": "String",
+    "seatClass": "int",
+    "seatNumber": "String",
+    "status": "int",
+    "to": "String",
+    "trainNumber": "String",
+    "travelDate": "Date",
+    "travelTime": "Date"
+  },
+  "other.entity: orders": {
+    "accountId": "UUID",
+    "boughtDate": "Date",
+    "coachNumber": "int",
+    "contactsDocumentNumber": "String",
+    "contactsName": "String",
+    "documentType": "int",
+    "from": "String",
+    "id": "UUID",
+    "price": "String",
+    "seatClass": "int",
+    "seatNumber": "String",
+    "status": "int",
+    "to": "String",
+    "trainNumber": "String",
+    "travelDate": "Date",
+    "travelTime": "Date"
+  },
+  "price.entity: price_config": {
+    "basicPriceRate": "double",
+    "firstClassPriceRate": "double",
+    "id": "UUID",
+    "routeId": "String",
+    "trainType": "String"
+  },
+  "route.entity: routes": {
+    "distances": "List<Integer>",
+    "id": "String",
+    "startStationId": "String",
+    "stations": "List<String>",
+    "terminalStationId": "String"
+  },
+  "security.entity: security_config": {
+    "description": "String",
+    "id": "UUID",
+    "name": "String",
+    "value": "String"
+  },
+  "train.entity: trainType": {
+    "averageSpeed": "int",
+    "confortClass": "int",
+    "economyClass": "int",
+    "id": "String"
+  },
+  "travel.entity: trainType": {
+    "averageSpeed": "int",
+    "confortClass": "int",
+    "economyClass": "int",
+    "id": "String"
+  },
+  "travel.entity: trip": {
+    "endTime": "Date",
+    "routeId": "String",
+    "startingStationId": "String",
+    "startingTime": "Date",
+    "stationsId": "String",
+    "terminalStationId": "String",
+    "trainTypeId": "String",
+    "tripId": "TripId"
+  },
+  "travel2.entity: routes": {
+    "distances": "List<Integer>",
+    "id": "String",
+    "startStationId": "String",
+    "stations": "List<String>",
+    "terminalStationId": "String"
+  },
+  "travel2.entity: trainType": {
+    "averageSpeed": "int",
+    "confortClass": "int",
+    "economyClass": "int",
+    "id": "String"
+  },
+  "travel2.entity: trip": {
+    "endTime": "Date",
+    "routeId": "String",
+    "startingStationId": "String",
+    "startingTime": "Date",
+    "stationsId": "String",
+    "terminalStationId": "String",
+    "trainTypeId": "String",
+    "tripId": "TripId"
+  }
+}
